@@ -7,8 +7,8 @@ import java.io.Serializable;
 import java.util.List;
 
 @Data
-public class CoursDto implements Serializable {
-    private final Long id;
-    private final List<Filiere_langueDto> filieres;
-    private final String intitule;
+public class CoursDto {
+    private Long id;
+    private List<Filiere_langueDto> filieres;
+    private String intitule;
 }

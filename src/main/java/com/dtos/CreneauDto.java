@@ -8,10 +8,10 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
-public class CreneauDto implements Serializable {
-    private final Long id;
-    private final CoursDto cours;
-    private final Type type;
-    private final LocalDateTime beginDate;
-    private final Long duree;
+public class CreneauDto {
+    private Long id;
+    private CoursDto cours;
+    private Type type;
+    private LocalDateTime beginDate;
+    private Long duree;
 }

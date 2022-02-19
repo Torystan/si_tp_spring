@@ -5,12 +5,12 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class Seance_formationDto implements Serializable {
-    private final Long id;
-    private final VacataireDto vacataire;
-    private final CreneauDto creneau;
-    private final boolean estEffectue;
-    private final long dureeEffective;
-    private final boolean valide;
-    private final String commentaire;
+public class Seance_formationDto {
+    private Long id;
+    private VacataireDto vacataire;
+    private CreneauDto creneau;
+    private boolean estEffectue;
+    private long dureeEffective;
+    private boolean valide;
+    private String commentaire;
 }
