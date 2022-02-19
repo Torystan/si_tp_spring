@@ -10,7 +10,7 @@ import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service("dogService")
+@Service("DogService")
 public class DogServiceImpl implements DogService {
 
 	private final DogRepository dogRepository;
