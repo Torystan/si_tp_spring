@@ -1,17 +1,16 @@
 package com.entities;
 
-import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
-
 import java.time.LocalDateTime;
-
 import javax.persistence.*;
+
+import lombok.Data;
 
 @Entity
 @Data
 public class Creneau {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
@@ -22,5 +21,4 @@ public class Creneau {
 
     private LocalDateTime beginDate;
     private Long duree;
-
 }

@@ -1,14 +1,14 @@
 package com.entities;
 
-import lombok.Data;
-
 import javax.persistence.*;
+
+import lombok.Data;
 
 @Entity
 @Data
 public class Filiere_langue {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne

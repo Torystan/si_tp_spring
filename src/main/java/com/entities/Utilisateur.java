@@ -1,15 +1,15 @@
 package com.entities;
 
-import lombok.Data;
-
 import javax.persistence.*;
+
+import lombok.Data;
 
 @Entity
 @Data
 @Inheritance(strategy=InheritanceType.JOINED)
 public abstract class Utilisateur {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String login;
@@ -17,5 +17,4 @@ public abstract class Utilisateur {
     private String nomUsuel;
     private String prenom;
     private String mail;
-
 }

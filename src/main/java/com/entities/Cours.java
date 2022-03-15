@@ -1,16 +1,16 @@
 package com.entities;
 
-import lombok.Data;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.Data;
+
 @Entity
 @Data
 public class Cours {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToMany
